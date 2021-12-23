@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="Test_Visual_Loop_Closure_Node" pkg="vis_loop_closure" type="image_pub" output="screen"/>
+    <include file="$(find vis_loop_closure)/launch/main.launch"/>
+</launch>

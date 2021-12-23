@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="Visual_Loop_Closure_Node" pkg="vis_loop_closure" type="main" output="screen"/>
+    
+    
+    <!-- Topic Parameters -->
+	<param name="add_img_topic" value="add_img_topic_name"/>
+	<param name="query_img_topic" value="query_img_topic_name"/>
+
+    <!-- Algorithm Specific Parameters-->
+    <param name="vocab_path" value="$(find vis_loop_closure)/vocabs/orbvoc.dbow3"/>
+	
+	<!-- Logging Parameters -->
+	<param name="logging" value="true"/>
+	
+
+</launch>
